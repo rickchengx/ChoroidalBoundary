@@ -1,4 +1,4 @@
-# USAGE
+# ChoroidalBoundaryDetection
 ## Arguments
 1. input directory
     * contains the images(.jpg) to be detected
@@ -25,4 +25,25 @@
 
 ```shell
 python ChoroidalBoundaryDetection.py /Users/rick/PycharmProjects/ChoroidalBoundary/data/OCT/ /Users/rick/PycharmProjects/ChoroidalBoundary/data/OCT_res/ 20 10 20 25 1500 13 0.1
+```
+
+# StatisticsCalculation
+## Arguments
+1. input directory
+    * contains the images(.jpg) to be detected
+2. output directory
+    * the output result directory
+    * need to be created in advance
+3. center_width
+    * the width of intermediate calculation area
+    * default = 1500 um
+4. niblack_n
+    * parameter of niblack algorithm
+5. niblack_k
+    * parameter of niblack algorithm
+
+## Example
+
+```shell
+python StatisticsCalculation.py /Users/rick/PycharmProjects/ChoroidalBoundary/data/OCT_2/ /Users/rick/PycharmProjects/ChoroidalBoundary/data/OCT_2_res/ 1500 13 0.1
 ```
